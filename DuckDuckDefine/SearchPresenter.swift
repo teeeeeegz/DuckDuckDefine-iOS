@@ -14,7 +14,7 @@ import Alamofire
 /**
  Protocol to connect the following classes: SearchViewController and SearchPresenter
  */
-protocol SearchMvpView : MvpView {
+protocol SearchMvpView: MvpView {
     func showSearchInProgress()
     func showSearchDefinition(_ term: String, _ definition: SearchDefinition)
     func displayLastSearchTerm(_ term: String)
