@@ -55,6 +55,6 @@ struct DataManager {
                                               "no_html": 1 as AnyObject,
                                               "skip_disambig": 1 as AnyObject]
         
-        return duckDuckGoApiService.searchRequest(searchTerm, parameters)
+        return duckDuckGoApiService.searchRequest(parameters)
     }
 }

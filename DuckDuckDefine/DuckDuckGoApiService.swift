@@ -16,7 +16,7 @@ import RxSwift
  DuckDuckGo API protocol
  */
 protocol DuckDuckGoApiService {
-    func searchRequest(_ searchTerm: String, _ parameters: [String:AnyObject]) -> Observable<(HTTPURLResponse, SearchDefinition)>
+    func searchRequest(_ parameters: [String:AnyObject]) -> Observable<(HTTPURLResponse, SearchDefinition)>
 }
 
 /**
@@ -29,7 +29,7 @@ struct DuckDuckGoApiHandler : DuckDuckGoApiService {
      Send a search request to DuckDuckGo with params. Parse response into a SearchDefinition
      object and return it as part of a tuple with the HTTPURLResponse
      */
-    func searchRequest(_ searchTerm: String, _ parameters: [String:AnyObject])
+    func searchRequest(_ parameters: [String:AnyObject])
         -> Observable<(HTTPURLResponse, SearchDefinition)> {
 
         return RxAlamofire.requestJSON(.get, sourceUrl, parameters: parameters)

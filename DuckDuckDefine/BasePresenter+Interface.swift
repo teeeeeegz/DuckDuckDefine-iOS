@@ -12,7 +12,7 @@ import RxSwift
 /**
  Common base type for a Presenter, to attach a View which implements this protocol
  */
-protocol MvpView : class {
+protocol MvpView: class {
 }
 
 /**
