@@ -7,7 +7,7 @@ My inspiration for this project was to refamiliarise my understanding of iOS dev
 
 This project will benefit those who develop for either Android or iOS, and intend to transition to the other at some stage. I have created an Android-alterative to this project with common libraries found in production apps today. Both projects share the same business logic and will aid in understanding the differences between Swift & Java syntax, and iOS & Android frameworks, learning through example.
 
-[The Android-alternative project can be found here](https://github.com/teeeeeegz/DuckDuckGo-Android)
+[The Android-alternative project can be found here](https://github.com/teeeeeegz/DuckDuckDefine-Android)
 
 
 ### Libraries:
